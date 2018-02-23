@@ -7,7 +7,9 @@
 The Contract is based on ERC20 Token Standard.
 
 ## What is this repository for?
-*Crypto Securities Token* ICO contract.
+* *Crypto Securities Token* ICO contract.
+
+* for crowd funding during the pre and ICO phase.
 
 ## Flow Chart CSX Coin
 
