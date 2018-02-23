@@ -2,14 +2,13 @@
 
 # README
 
-*CSX.sol* is a fixed supply contract with a fixed supply of 100000000, Out of which 51000000 Tokens are initially assigned to the owner of the contract and 49000000 Tokens are available for the Crowdsale.
+*CSX.sol* is a fixed supply contract with a fixed supply of 100000000 initially assigned to the owner of the contract.
 
 The Contract is based on ERC20 Token Standard.
 
 ## What is this repository for?
 * *Crypto Securities Token* ICO contract.
 
-* for crowd funding during the pre and ICO phase.
 
 ## Flow Chart CSX Coin
 
@@ -33,31 +32,9 @@ Deploy the above *CSX.sol* smart contract and obtain its address.
 The address which deployed the Smart Contract becomes the Owner of the Smart Contract.
 
   
-### Start PREICO  
-**start_PREICO** function needs to be called by the Owner of the Smart Contract to start the PREICO. The preICO runs for 39 days.
+### Burn Tokens
+**burntokens** function needs to be called by the Owner of the Smart Contract to end the ICO. Any tokens not sold in the ICO will be burnt here.
 
-1 USD = 1 CSX coin
-
-Ether can be transferred to the Smart Contract address **(from account other than the Owner’s account)**.
-Once hard Cap of 49000000 USD is reached or 39 days are completed, the smart contract can no more accept any ether.
-
-
-### Start ICO
-**start_ICO** function needs to be called by the Owner of the Smart Contract to start the ICO. The preICO runs for 31 days.
-
-1 USD = 1 CSX coin
-
-Ether can be transferred to the Smart Contract address **(from account other than the Owner’s account)**.
-Once hard Cap of 49000000 USD is reached OR 31 days are completed, the smart contract can no more accept any ether.
-
-### End ICO
-**end_ICO** function needs to be called by the Owner of the Smart Contract to end the ICO. Any tokens left in the Smart Contract will be burnt here.
-
-TotalSupply = 100,000,000  CSX Coins 
-
-Balances Smart Contract = 0  CSX Coins 
-
-**Note**:   end_ICO(  ) should be called only after  ICO crowdsale gets completed / Hard Cap of 49000000 USD is reached.
 
 ### Token Balance
 To check the token balance of token holder, **balanceOf()** function needs to be used.
@@ -112,13 +89,5 @@ The **balanceOf()** will now return following values:
 
 ### Note : 
 The above two addresses(0X111, 0X222) taken in Example are not Valid Ethereum Addresses, to make transaction you need to have a valid Ethereum Address.
-     
-## Important Functions
-**PauseICO( )**: Only Owner of the Smart contract can call this function to Pause the Crowdsale at any phase.
-
-**ResumeICO( )**: Only Owner of the Smart contract can call this function to Resume the Crowdsale at any phase.
-
-**drain( )**: Owner can transfer all the Ether from the Smart contract anytime using this function in case there is any Ether left in the Smart Contract.
-
 
 
