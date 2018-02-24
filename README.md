@@ -6,6 +6,8 @@
 
 The Contract is based on ERC20 Token Standard.
 
+The code is written for Solidity version 0.4.20
+
 ## What is this repository for?
 * *Crypto Securities Token* ICO contract.
 
